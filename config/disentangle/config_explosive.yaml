@@ -1,0 +1,57 @@
+pretrained_model_name_or_path: "black-forest-labs/FLUX.1-dev"
+instance_data_dir: "image/disentangle/explosive/"
+instance_prompt: "explosive VFX"
+prompt_a: "A photo of explosive VFX"
+prompt_b: "A Photo"
+key_word: "explosive VFX"
+output_dir: "EA/dis_explosive/"
+mixed_precision: "bf16"
+resolution: 512
+cache_latents: false
+train_batch_size: 1
+dataloader_num_workers: 0
+with_prior_preservation: false
+gradient_accumulation_steps: 1
+repeats: 1
+report_to": "wandb"
+gradient_accumulation_steps": 1
+learning_rate: 1e-3
+lr_num_cycles: 1
+lr_power: 1.0
+use_8bit_adam: false
+optimizer: "adamw"
+adam_beta1: 0.9
+adam_beta2: 0.999
+adam_weight_decay: 1e-5
+adam_epsilon: 1e-8
+max_train_steps: 300
+checkpointing_steps: 2000
+guidance_scale: 3.5
+logit_mean: 0.0
+logit_std: 1.0
+mode_scale: 1.29
+weighting_scheme: "none" # ["sigma_sqrt", "logit_normal", "mode", "cosmap", "none"]
+num_train_epochs: 1
+logging_dir: logs
+center_crop: false
+revision: null
+variant: null
+gradient_checkpointing: false
+train_text_encoder: false
+lora_layers: null
+rank: 8
+lr_scheduler: "constant"
+lr_warmup_steps: 0
+report_to: "wandb"
+max_sequence_length: 256
+negative_guidance: 1
+devices: "0,1"
+lamb1: 1.0       # ESD loss
+lamb2: 0.001   # attn weight loss
+lamb3: 0.1     # lora loss
+lamb4: 0.1     # InfoNCE loss
+
+
+
+
+
