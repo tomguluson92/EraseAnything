@@ -18,7 +18,6 @@ EraseAnything: Enabling Concept Erasure in Rectified Flow Transformers is an ope
 
 - ✅ Supports **[diffusers]**
 - ✅ Easy to extend and integrate
-- ❌ No dependency on **[what you do NOT require, e.g., external annotation tools]**
 
 ## Installation & Environment Setup
 
