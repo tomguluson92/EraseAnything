@@ -45,7 +45,7 @@ EraseAnything: Enabling Concept Erasure in Rectified Flow Transformers is an ope
 
 ## Quick Start
 
-0. **Set AI Secret Key**
+0. **Set AI Secret Key** (Strongly recommend OpenRouter!)
 
     ```bash
     API_KEY='xxx'
