@@ -39,8 +39,16 @@ EraseAnything: Enabling Concept Erasure in Rectified Flow Transformers is an ope
    cd peft
    pip install -e .[torch]
 
+   or
+
+   python setup.py install
+
    cd ../diffusers
    pip install -e .[torch]
+
+   or
+
+   python setup.py install
    ```
 
 ## Quick Start
